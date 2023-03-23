@@ -384,4 +384,33 @@ input[type="radio"] {
   .copyright-description {
     font-size: 0.625rem;
   }
+  .text-col,
+  .img-col {
+    flex-basis: 100%;
+  }
+  .text-col h2 {
+    font-size: 2rem;
+    font-weight: 700s;
+    margin: 0;
+  }
+  .features h2 {
+    font-size: 30px;
+  }
+  .features p {
+    font-size: 15px;
+  }
+  .row {
+    text-align: center;
+    flex-direction: column;
+  }
+  .row:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+  .faq h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .footer .row {
+    flex-direction: row;
+  }
 }
