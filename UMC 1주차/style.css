@@ -378,6 +378,9 @@ input[type="radio"] {
   .accordion li label {
     font-size: 0.9375rem;
   }
+  .faq {
+    font-size: 0.875rem;
+  }
   .email__form .start__btn {
     font-size: 0.9375rem;
   }
