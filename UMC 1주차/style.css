@@ -85,7 +85,6 @@ nav {
 
 .logo {
   width: 150px;
-  cursor: pointer;
 }
 
 nav button {
@@ -359,4 +358,30 @@ input[type="radio"] {
   margin-top: 10px;
   color: #777;
   font-size: 16px;
+}
+
+/* for small screen */
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 8.25rem;
+  }
+  nav button {
+    padding: 0.4375rem 0.625rem;
+  }
+  .header__content p {
+    font-size: 0.8125rem;
+  }
+  .header__content .start__btn {
+    height: 2.8125rem;
+    font-size: 1.25rem;
+  }
+  .accordion li label {
+    font-size: 0.9375rem;
+  }
+  .email__form .start__btn {
+    font-size: 0.9375rem;
+  }
+  .copyright-description {
+    font-size: 0.625rem;
+  }
 }
