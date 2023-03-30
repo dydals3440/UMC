@@ -259,7 +259,7 @@ nav button {
 /* label 이후에 + 아이콘을 추가 label에 relative를 해주어야지
 absolute시 부모요소 기준으로 +가 그려짐!!! 매우 중요 */
 label::after {
-  content: "+";
+  content: '+';
   font-size: 40px;
   position: absolute;
   right: 20px;
@@ -267,7 +267,7 @@ label::after {
 }
 
 /* 동그라미 선택점을 없애줌. */
-input[type="radio"] {
+input[type='radio'] {
   display: none;
 }
 
@@ -281,12 +281,12 @@ input[type="radio"] {
 }
 
 /* input이 체크가 되면 헤딩하는 라벨의 콘텐트를 보여줌.  */
-.accordion input[type="radio"]:checked + label + .content {
+.accordion input[type='radio']:checked + label + .content {
   max-height: 600px;
   padding: 30px 20px;
 }
 
-.accordion input[type="radio"]:checked + label::after {
+.accordion input[type='radio']:checked + label::after {
   transform: rotate(135deg);
 }
 
@@ -325,6 +325,7 @@ input[type="radio"] {
 
 .footer .col {
   flex-basis: 15%;
+  /* flex-grow: 0일 경우에는 가운데에 몰리게됨, 1로 주면 화면이 넓어져도 꽉채움 */
   flex-grow: 1;
   margin-bottom: 20px;
 }
@@ -332,7 +333,6 @@ input[type="radio"] {
 .footer .col a {
   /* 세로로 변경 */
   display: block;
-  text-decoration: none;
   color: #777;
   font-size: 14px;
   margin-left: 10px;
