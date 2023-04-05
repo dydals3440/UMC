@@ -27,10 +27,25 @@ body {
   background-position: center;
 }
 
-.text {
-  text-transform: uppercase;
+#text {
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
+}
+
+.speed_container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#number {
+  padding: 10px;
+  text-align: center;
+  border: transparent;
+  border-radius: 10px;
+  background-color: lightgoldenrodyellow;
 }
 
 .logo {
