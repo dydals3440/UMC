@@ -27,6 +27,19 @@ body {
   background-position: center;
 }
 
+/*  logo  */
+.logo {
+  width: 200px;
+}
+
+.jsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* text */
 #text {
   font-size: 18px;
   font-weight: 700;
@@ -48,9 +61,50 @@ body {
   background-color: lightgoldenrodyellow;
 }
 
-.logo {
-  width: 200px;
+/* search container */
+.search {
+  position: relative;
+  text-align: center;
+  left: -16px;
 }
+
+.search .input {
+  padding: 20px;
+  width: 0px;
+  font-size: 16px;
+  transition: width 0.4 ease;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.search .btn {
+  background-color: aliceblue;
+  padding: 20px;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 200px;
+  outline: none;
+}
+
+.search.active .btn {
+  transform: translateX(200px);
+  border-radius: 0 10px 10px 0;
+}
+
+/* nav */
 
 .nav-btn {
   border: none;
